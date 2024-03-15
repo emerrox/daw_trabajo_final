@@ -1,0 +1,4 @@
+baseURL = "https://github.com/emerrox/daw_trabajo_final.git.io"
+languageCode = "es"
+title = "Mi Sitio Hugo"
+theme = "nombre_del_tema"
