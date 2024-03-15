@@ -40,3 +40,18 @@ Los pipelines son una buena forma de automatizar flujos de trabajo
 
 4. **Ejecuta y monitorea tus pipelines:**
    - Una vez que hayas definido tus pipelines, podrás verlos en la pestaña "Actions" de tu repositorio. Desde allí, podrás ejecutar manualmente tus pipelines y ver el estado de cada paso en tiempo real.
+
+
+## Beneficios de la integracion continua
+
+- **Detección temprana de errores:** Permite identificar errores de manera inmediata
+
+- **Entregas más frecuentes:** Al integrar y probar el código de forma regular, es mas facil sacar nuevas versiones
+
+- **Mejora de la calidad del software:** Al ejecutar pruebas automáticas mejora la calidad 
+
+- **Reducción de riesgos:** Se minimiza el riesgo de introducir errores en el código base
+
+- **Mayor colaboración:** Fomenta la colaboración y la comunicacion
+
+- **Feedback rápido:** Se recibe rapidamente retroalimentacion sobre cada cambio
