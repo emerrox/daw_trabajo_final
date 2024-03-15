@@ -1,0 +1,3 @@
+[submodule "sitio_emerrox/themes/magic_emerrox"]
+	path = sitio_emerrox/themes/magic_emerrox
+	url = https://github.com/goodroot/hugo-classic.git
