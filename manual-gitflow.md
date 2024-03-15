@@ -23,7 +23,7 @@ Para que el restaurante esté listo para abrir, tendremos que tener todas las ra
   - Todo lo que hay en la rama master se despliega
   - Para cualquier caracteristica nueva se hace una rama desde master
 
--  GitLab Flow:
+- GitLab Flow:
   - Alternativa que nace a raiz de carencias de GitHub Flow y GitFlow
   - Cuando se finalizan features, se hacen merges directos a master
   - Mucha confianza en la versión de producción
