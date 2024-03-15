@@ -4,7 +4,7 @@
 - Un sistema de control de versiones distribuido, rápido y escalable que ayuda a crear el código con diferentes versiones y un historial de cambios
 
 ## ¿Por que usar GIT?
-- Git permite rastrear y documentar cada cambio realizado en el código a lo largo del tiempo.
+- Git permite rastrear y documentar cada cambio realizado en el código a lo largo del tiempo
 
 ## Ventajas de usar Git
 
