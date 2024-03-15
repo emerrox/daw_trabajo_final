@@ -23,7 +23,6 @@ Integracion continua paso a paso en github actions
 8. **Inicia el runner:**
    - Una vez configurado el runner, puedes iniciarlo en tu maquina local para ejecutar trabajos de GitHub Actions
 
----
 
 ## Uso de Pipelines en GitHub Actions
 
@@ -41,17 +40,53 @@ Los pipelines son una buena forma de automatizar flujos de trabajo
 4. **Ejecuta y monitorea tus pipelines:**
    - Una vez que hayas definido tus pipelines, podrás verlos en la pestaña "Actions" de tu repositorio. Desde allí, podrás ejecutar manualmente tus pipelines y ver el estado de cada paso en tiempo real.
 
+## Despliegue de Integración Continua con GitHub
+- **Crear un archivo yml**
+Dentro de este directorio, crea un archivo YAML para definir tu flujo de trabajo de integración continua. Por ejemplo, `ci.yml`.:
+~~~
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código fuente
+      uses: actions/checkout@v2
+      
+    - name: Instalar dependencias
+      run: npm install
+      
+    - name: Ejecutar pruebas
+      run: npm test
+
+- **Subir el archivo**
+ Guardar los cambios, commitear y epujar contra el repositorio remoto
+~~~
 
 ## Beneficios de la integracion continua
 
-- **Detección temprana de errores:** Permite identificar errores de manera inmediata
+- **Detección temprana de errores:** 
+Permite identificar errores de manera inmediata
 
-- **Entregas más frecuentes:** Al integrar y probar el código de forma regular, es mas facil sacar nuevas versiones
+- **Entregas más frecuentes:** 
+Al integrar y probar el código de forma regular, es mas facil sacar nuevas versiones
 
-- **Mejora de la calidad del software:** Al ejecutar pruebas automáticas mejora la calidad 
+- **Mejora de la calidad del software:** 
+Al ejecutar pruebas automáticas mejora la calidad 
 
-- **Reducción de riesgos:** Se minimiza el riesgo de introducir errores en el código base
+- **Reducción de riesgos:** 
+Se minimiza el riesgo de introducir errores en el código base
 
-- **Mayor colaboración:** Fomenta la colaboración y la comunicacion
+- **Mayor colaboración:** 
+Fomenta la colaboración y la comunicacion
 
-- **Feedback rápido:** Se recibe rapidamente retroalimentacion sobre cada cambio
+- **Feedback rápido:** 
+Se recibe rapidamente retroalimentacion sobre cada cambio
+
+
