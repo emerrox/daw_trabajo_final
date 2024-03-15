@@ -17,6 +17,21 @@ Para que el restaurante esté listo para abrir, tendremos que tener todas las ra
 - Nivel: Es algo complejo entender bien el funcionamiento y ponerlo en práctica. Si se usa sin tener tantos conociemientos, puede llevar a problemas a la hora de ponerlo en práctica
 - Hay proyectos en los que gitflow no es la mejor opción a utilizar, debido a que el proyecto sea más simple desarrollarlo con otros métodos más sencillos que con gitflow
 
+## Alternativas
+- GitHub Flow:
+  - La mayor diferencia es que no tiene rama dev.
+  - Todo lo que hay en la rama master se despliega
+  - Para cualquier caracteristica nueva se hace una rama desde master
+
+-  GitLab Flow:
+  - Alternativa que nace a raiz de carencias de GitHub Flow y GitFlow
+  - Cuando se finalizan features, se hacen merges directos a master
+  - Mucha confianza en la versión de producción
+
+- Master-Only Flow:
+  -  Solo se utiliza una rama, master
+  -  Se realizan las features o hotfix sobre la rama master, y al acabar se hace un commit local
+  -  Se tiene el histórico del proyecto limpio
 
 ## Comnados de git
 
