@@ -1,29 +1,18 @@
-name: Hugo Build and Deploy
+image: registry.gitlab.com/pages/hugo:latest
 
-on:
-  push:
-    branches:
-      - master
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+stages:
+  - deploy
 
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-      
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        
-    - name: Build
-      run: hugo --minify
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        publish_branch: gh-pages
+deploy:
+  stage: deploy
+  script:   
+    - cd hugo-documentacion
+    - hugo --destination ../public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
